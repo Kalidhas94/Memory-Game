@@ -9,7 +9,7 @@
     h1{
       color: #fff;
       margin-bottom:12px;
-      font-size: 28px;
+      font-size: 25px;
     }
     p{
       color: #f7f4f4;
@@ -58,7 +58,7 @@
 
     .card.flipped,
     .card.matched{
-      background-image:url("./memory_2.jpg");
+      background: #50BB89;
       color:#000;
       cursor:default;
     }
@@ -104,7 +104,7 @@
 
     #resetBtn{
       padding:6px 16px;
-      font-size:15px;
+      font-size:12px;
       background:#423204;
       
       color:white;
