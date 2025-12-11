@@ -1,0 +1,148 @@
+    body{
+      font-family: Cambria, Georgia, serif;
+      background-image: url("./memory_1.jpg");
+      background-size: cover;
+      text-align:center;
+      padding:40px;
+    }
+
+    h1{
+      color: #fff;
+      margin-bottom:12px;
+      font-size: 28px;
+    }
+    p{
+      color: #f7f4f4;
+      font-size: 15px;
+      margin-bottom:12px;
+    }
+
+    .stats{
+      font-size:16px;
+      margin:10px 0;
+      display:flex;
+      justify-content:center;
+      gap:25px;
+      color:#fff;
+      padding-bottom: 20px;
+      align-items:center;
+    }
+
+    .board{
+      display:grid;
+      gap:8px;
+      justify-content:center;
+      margin:12px auto;
+      transition:0.4s ease-in-out;
+    }
+
+    .fade { opacity: 0; }
+    .fade-show { opacity: 1; }
+
+    .card{
+      width:60px;
+      height:60px;
+      background-image: url(./memory_1.jpg);
+      background-size:cover;
+      border-radius:8px;
+      border: #999595 1px solid;
+      font-size:40px;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      cursor:pointer;
+      user-select:none;
+      color:transparent;
+      transition:0.2s;
+    }
+
+    .card.flipped,
+    .card.matched{
+      background-image:url("./memory_2.jpg");
+      color:#000;
+      cursor:default;
+    }
+
+    .popup{
+      position:fixed;
+      inset:0;
+      background-image:url("./memory_3.jpg");
+      background-size:cover;
+      display:none;
+      align-items:center;
+      justify-content:center;
+      z-index:1000;
+    }
+
+    .popup-content{
+      background-image:url("./memory_3.jpg");
+      background-size:cover;
+      padding:22px 25px;
+      border-radius:10px;
+      width:100%;
+      max-width:330px;
+      color: #f7f4f4;
+    }
+
+    .stars{
+      color:gold;
+      font-size:22px;
+      margin:10px 0;
+    }
+
+    button{
+      padding:10px 20px;
+      font-size:16px;
+      background:#1e90ff;
+      color:#fff;
+      border:none;
+      border-radius:6px;
+      cursor:pointer;
+      margin-top:10px;
+      width:100%;
+    }
+
+    button:hover{ background:#0c6ad4; }
+
+    #resetBtn{
+      padding:6px 16px;
+      font-size:15px;
+      background:#423204;
+      
+      color:white;
+      border:none;
+      border-radius:8px;
+      cursor:pointer;
+      transition:0.3s;
+      width:auto;
+      margin-top:0;
+    }
+
+    #resetBtn:hover{
+     background-image:url("./memory_1.jpg");
+      background-size:cover;
+      transform:scale(1.05);
+    }
+
+.stats1, .stats2, .stats3 {
+  padding:6px 16px;
+      font-size:12px;
+      background-image:url("./memory_1.jpg");
+      background-size:cover;
+      color:white;
+      border:none;
+      border-radius:8px;
+      transition:0.3s;
+      width:auto;
+      margin-top:0;
+      
+}
+
+    @media (max-width:600px){
+      .card{
+        width:38px;
+        height:38px;
+        font-size:16px;
+      }
+    }
+  
