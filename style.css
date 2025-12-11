@@ -66,8 +66,6 @@
     .popup{
       position:fixed;
       inset:0;
-      background-image:url("./memory_3.jpg");
-      background-size:cover;
       display:none;
       align-items:center;
       justify-content:center;
@@ -75,7 +73,7 @@
     }
 
     .popup-content{
-      background-image:url("./memory_3.jpg");
+      background-image:url("./memory_1.jpg");
       background-size:cover;
       padding:22px 25px;
       border-radius:10px;
