@@ -158,7 +158,7 @@ levels.push(i);
       starsEl.textContent = getStars();
       nextLevelBtn.textContent = "Next Level";
     } else {
-      resultTitle.textContent = "❌ Levels Not Completed!";
+      resultTitle.textContent = "❌ Level Not Completed!";
       resultStats.textContent =
         "Moves: " + moves + " / " + moveLimit + " | Time: " + time + "s";
       starsEl.textContent = "";
