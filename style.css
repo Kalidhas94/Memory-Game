@@ -3,7 +3,8 @@
       background-image: url("./memory_1.jpg");
       background-size: cover;
       text-align:center;
-      padding:40px;
+      padding:30px;
+      margin: 0;
     }
 
     h1{
@@ -13,31 +14,37 @@
     }
     p{
       color: #f7f4f4;
-      font-size: 15px;
+      font-size: 14px;
       margin-bottom:12px;
     }
 
     .stats{
-      font-size:16px;
+      font-size:14px;
       margin:10px 0;
       display:flex;
+      flex-direction: row;
       justify-content:center;
-      gap:25px;
+      gap:10px;
       color:#fff;
       padding-bottom: 20px;
       align-items:center;
     }
-
+    .stats1, .stats2, .stats3 {
+      padding:6px 16px;
+      font-size:12px;
+      background-image:url("./memory_1.jpg");
+      background-size:cover;
+      color:white;
+      border-radius:8px;
+      width:auto;
+}
     .board{
       display:grid;
       gap:8px;
       justify-content:center;
       margin:12px auto;
-      transition:0.4s ease-in-out;
+      transition:0.5s ease-in-out;
     }
-
-    .fade { opacity: 0; }
-    .fade-show { opacity: 1; }
 
     .card{
       width:60px;
@@ -46,7 +53,7 @@
       background-size:cover;
       border-radius:8px;
       border: #999595 1px solid;
-      font-size:40px;
+      font-size:35px;
       display:flex;
       align-items:center;
       justify-content:center;
@@ -54,7 +61,7 @@
       user-select:none;
       color:transparent;
       transition:0.2s;
-    }
+      }
 
     .card.flipped,
     .card.matched{
@@ -75,9 +82,9 @@
     .popup-content{
       background-image:url("./memory_1.jpg");
       background-size:cover;
-      padding:22px 25px;
+      padding:25px;
       border-radius:10px;
-      width:100%;
+      width:90%;
       max-width:330px;
       color: #f7f4f4;
     }
@@ -90,7 +97,7 @@
 
     button{
       padding:10px 20px;
-      font-size:16px;
+      font-size:15px;
       background:#1e90ff;
       color:#fff;
       border:none;
@@ -106,14 +113,11 @@
       padding:6px 16px;
       font-size:12px;
       background:#423204;
-      
       color:white;
       border:none;
       border-radius:8px;
-      cursor:pointer;
-      transition:0.3s;
       width:auto;
-      margin-top:0;
+      margin-top: 0;
     }
 
     #resetBtn:hover{
@@ -122,25 +126,34 @@
       transform:scale(1.05);
     }
 
-.stats1, .stats2, .stats3 {
-  padding:6px 16px;
-      font-size:12px;
-      background-image:url("./memory_1.jpg");
-      background-size:cover;
-      color:white;
-      border:none;
-      border-radius:8px;
-      transition:0.3s;
-      width:auto;
-      margin-top:0;
-      
-}
+    @media (max-width:768px){
 
-    @media (max-width:600px){
-      .card{
-        width:38px;
-        height:38px;
+      body{
+       padding: 40px; 
+      }
+      h1{
+        font-size:32px;
+      }
+      p{
+        font-size:18px;
+      }
+      .stats{
+        flex-direction: column;
+        gap: 10px;
         font-size:16px;
+      }
+      .card{
+        width:45px;
+        height:45px;
+        font-size:30px;
+      }
+      button{
+        font-size: 17px;
+        width: 200%;
+      margin: auto;
+      }
+      .popup-content{
+       padding: 30px 35px;
       }
     }
   
