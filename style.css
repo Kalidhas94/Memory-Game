@@ -82,10 +82,10 @@
     .popup-content{
       background-image:url("./memory_1.jpg");
       background-size:cover;
-      padding:25px;
+      padding:10px;
       border-radius:10px;
       width:90%;
-      max-width:330px;
+      max-width:300px;
       color: #f7f4f4;
     }
 
