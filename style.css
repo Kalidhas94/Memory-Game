@@ -46,7 +46,7 @@
 }
     .board{
       display:grid;
-      gap:8px;
+      gap:20px;
       justify-content:center;
       margin:12px auto;
       transition:0.5s ease-in-out;
@@ -55,7 +55,7 @@
     .card{
       width:60px;
       height:60px;
-      background-image: url(./memory_1.jpg);
+      background-image: url(./memory_3.jpg);
       background-size:cover;
       border-radius:8px;
       border: #999595 1px solid;
@@ -66,16 +66,20 @@
       cursor:pointer;
       user-select:none;
       color:transparent;
-      transition:0.2s;
+      transition:transform 0.4s ease, background 0.3s;
+      transform-style: preserve-3d;
       }
 
     .card.flipped,
     .card.matched{
+      transform: rotateY(180deg);
       background: #50BB89;
-      color:#000;
+      color:#fff;
       cursor:default;
     }
-
+.card:hover{
+  transform: scale(1.05);
+}
     .popup{
       position:fixed;
       inset:0;
@@ -168,6 +172,10 @@
       color:gold;
       font-size:15px;
       margin:10px 0;
+    }
+    .board{
+      gap:10px 0;
+
     }
     }
   

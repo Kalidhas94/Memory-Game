@@ -9,15 +9,13 @@
   var starsEl = document.getElementById("stars");
 
   var levels = [];
-  for(var i=2; i<=100; i++)
+  for(var i=2; i<=8; i++)
 {
 levels.push(i);
 }
   var emojiSet = [
     "🐶","🐱","🦊","🦁","🐯","🐨","🐼","🐸",
     "🐵","🦄","🐙","🐝","🐢","🐻","🦒","🐘",
-    "🐒","🐺","🐓","🐍","🕷️","🐉","🐌","🐞",
-    "🐳","🦂","🕸️","🦋","🐜","🐠","🐧","🐿️"
   ];
 
   var moveLimit = 0; 
@@ -83,7 +81,7 @@ levels.push(i);
       var card = document.createElement("div");
       card.className = "card";
       card.dataset.symbol = sym;
-      card.textContent = sym;
+      card.innerHTML = sym;
       card.onclick = () => flipCard(card);
       board.appendChild(card);
     });
@@ -133,7 +131,7 @@ levels.push(i);
           stopTimer();
           showPopup(false);
         }
-      },600);
+      },1000);
     }
   }
 
